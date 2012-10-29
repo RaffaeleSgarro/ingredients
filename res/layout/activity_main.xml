@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/save" >
+
+        <view
+            class="stackoverflow.ingredients.MainActivity$IngredientsView"
+            android:id="@+id/ingredients"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save" />
+
+</RelativeLayout>
